@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 📊 Order Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, high-performance **Order Management Dashboard** built with **React** and **Redux Toolkit**. This application provides a order management experience with real-time analytics, advanced order filtering, and high-performance data handling.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Key Features
 
-### `npm start`
+### 1. **Dashboard Overview**
+- **Real-time Analytics**: Visual summary of Total Orders, Revenue (formatted in INR), Pending, and Completed orders.
+- **Quick Insights**: Dynamic stats cards with smooth hover animations and transition effects.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. **Advanced Order Management**
+- **High-Performance Listing**: Utilizes  for list virtualization, ensuring smooth performance even with thousands of orders.
+- **Powerful Filtering**: Filter orders by status (Pending, Delivered, Shipped, Cancelled), search by customer/ID, and filter by date range.
+- **Bulk Actions**: Select multiple orders to update their status or delete them simultaneously.
+- **Individual Actions**: Edit order details or remove specific orders with immediate feedback.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. **Robust State Management**
+- **Optimistic Updates**: UI updates instantly when changes are made, with automatic rollback functionality if the API request fails.
+- **Redux Toolkit**: Centralized state management for orders and authentication using modern slices and async thunks.
 
-### `npm test`
+### 4. **User Experience & UI**
+- **Authentication**: Secure login flow with protected routing.
+- **Responsive Design**: Sidebar-based navigation that works seamlessly across desktop and mobile devices.
+- **Toast Notifications**: Interactive feedback system for success and error states.
+- **Pagination**: Efficiently navigate through large sets of order data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: [React 19](https://react.dev/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Routing**: [React Router v6](https://reactrouter.com/)
+- **Data Fetching**: [Axios](https://axios-http.com/)
+- **Performance**: [React Window](https://github.com/bvaughn/react-window) (Virtualization)
+- **Utilities**: `date-fns`, `lodash`
+- **Styling**: Modern CSS-in-JS patterns for modular and maintainable styles.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Project Structure
 
-### `npm run eject`
+```
+src/
+├── app/            # Redux store configuration
+├── components/     # UI Components (Auth, Dashboard, Orders, UI)
+├── features/       # Redux Slices & Logic (Auth, Orders)
+├── hooks/          # Custom React hooks
+├── mock/           # Mock API implementation
+├── routes/         # Route protection logic
+├── utils/          # Helper functions & formatters
+└── App.js          # Main application component & routing
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd dashboard
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+   The app will be available at `http://localhost:3000` or host in vercel netlify.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📜 Available Scripts
 
-### Code Splitting
+- `npm start`: Runs the app in development mode.
+- `npm run build`: Builds the app for production to the `build` folder.
+- `npm test`: Launches the test runner in interactive watch mode.
+- `npm run eject`: Removes the single build dependency from your project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
