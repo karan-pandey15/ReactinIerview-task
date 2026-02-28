@@ -5,7 +5,6 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
   const menuItems = [
     { name: 'Dashboard Home', path: '/dashboard', icon: '📊' },
     { name: 'Manage Orders', path: '/orders', icon: '🛒' },
-    { name: 'Account Settings', path: '/settings', icon: '⚙️' },
   ];
 
   const sidebarStyle = {

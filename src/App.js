@@ -35,21 +35,9 @@ function App() {
                 </ProtectedRoute>
               } />
 
-              <Route path="/settings" element={
-                <ProtectedRoute>
-                  <DashboardLayout>
-                    <div style={{ padding: '20px' }}>
-                      <h1 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '1rem' }}>Settings</h1>
-                      <div style={{ padding: '30px', backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #dee2e6' }}>
-                        <p style={{ color: '#666' }}>Configuration and user settings implementation is coming soon.</p>
-                      </div>
-                    </div>
-                  </DashboardLayout>
-                </ProtectedRoute>
-              } />
-              
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
-              <Route path="*" element={<Navigate to="/dashboard" replace />} />
+
+              <Route path="/" element={<Navigate to="/orders" replace />} />
+              <Route path="*" element={<Navigate to="/orders" replace />} />
             </Routes>
           </Suspense>
         </Router>

@@ -13,7 +13,7 @@ const LoginPage = () => {
   const { addToast } = useToast();
   const { isAuthenticated, loading, error } = useSelector((state) => state.auth);
 
-  const from = location.state?.from?.pathname || '/dashboard';
+  const from = location.state?.from?.pathname || '/orders';
 
   useEffect(() => {
     if (isAuthenticated) {
