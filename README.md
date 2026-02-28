@@ -11,7 +11,7 @@ A modern, high-performance **Order Management Dashboard** built with **React** a
 - **Quick Insights**: Dynamic stats cards with smooth hover animations and transition effects.
 
 ### 2. **Advanced Order Management**
-- **High-Performance Listing**: Utilizes  for list virtualization, ensuring smooth performance even with thousands of orders.
+- **High-Performance Listing**: Utilizes  for list virtualization, ensuring smooth performance even with thousands of orders for optimize use Memo useCallbacke.
 - **Powerful Filtering**: Filter orders by status (Pending, Delivered, Shipped, Cancelled), search by customer/ID, and filter by date range.
 - **Bulk Actions**: Select multiple orders to update their status or delete them simultaneously.
 - **Individual Actions**: Edit order details or remove specific orders with immediate feedback.
@@ -73,7 +73,7 @@ src/
    ```bash
    npm start
    ```
-   The app will be available at `http://localhost:3000` or host in vercel netlify.
+   The app will be available at `https://react-interview-task-red.vercel.app/login`.
 
 ---
 
